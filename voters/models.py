@@ -10,4 +10,4 @@ class Voter(models.Model):
     polled = models.BooleanField(default=False, blank=True, null=True)
 
     def __str__(self):
-        return self.sl + " || " + self.name+" || " + self.house
+        return str(self.sl) + " || " + self.name+" || " + self.house
