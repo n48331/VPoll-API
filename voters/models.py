@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Voter(models.Model):
-    sl = models.IntegerField(max_length=200)
+    sl = models.IntegerField()
     name = models.CharField(max_length=200)
     house = models.CharField(max_length=200)
     polled = models.BooleanField(default=False, blank=True, null=True)
